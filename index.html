@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Movie Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="datastore.js"></script>
+</head>
+<body>
+
+    <header role="banner">
+        <h1 class="mainTitle">THE MOVIE QUIZ</h1>
+            <div class="applogo">
+                <img class="cameraImage" src="https://www.shoppinghungama.com/wp-content/uploads/2019/01/Creative-Vintage-Movie-Projector-Model-Camera-Photography-Props-Resin-Craft-Bar-Coffee-Net-Bar-Home-Decoration-5-100x100.jpg" alt="film projector image">
+            </div>
+            <div class="quiz-number-scoring-container">
+                <ul id="list-number-score">
+                    <li class="quizCounter">Question: &nbsp; <span class="questionNumber">0</span>/10&nbsp; </li>
+                    <li class="quizScore">Score: <span class="usersScore">0</span></li>
+                </ul>
+            </div>
+    </header>
+<main>
+  <div class="question">
+    <h3 class='question-text'></h3>
+    <form class="questionList" id="questionList" action="/action_page.php">
+        <input type="radio" name="choice" value="" >&nbsp;</input> 
+        <span class='choiceOne-option'></span><br>
+        <input type="radio" name="choice" value="">&nbsp;</input><span class="choiceTwo-option"></span><br>
+        <input type="radio" name="choice" value="">&nbsp;</input><span class="choiceThree-option"></span><br>  
+        <input type="radio" name="choice" value="">&nbsp;</input><span class="choiceFour-option"></span><br>
+      <div class="submit-button-container">
+        <button class="submit-button" id="makeSelectionAlert" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="continue">
+          <h4 class='continue-message'></h4><!--CORRECT AND WRONG TEXT-->
+          <h5 class='correction'></h4><!--correct answer text-->      
+          <button class="nextButton">Next</button>
+  </div>
+  
+      
+
+  <div class="start-quiz">
+    <h2>Do you know your movies?</h2> 
+
+    <h2>Take my &nbsp;<span class="quizText"><strong>QUIZ</strong></span>&nbsp;if you dare.</h2>
+    <div class="button">
+        <button class="start-button" type="button">Click Me</button>
+    </div>    
+  </div>
+
+<!--this end of the quiz-->
+  <div class="end-quiz">
+      <p class="end-score"></p>
+      <p class="comment"></p>
+      <button class="retake-button" type="button">Retake Quiz</button>
+  </div>
+
+  
+</main>
+
+</body>
+</html>    
